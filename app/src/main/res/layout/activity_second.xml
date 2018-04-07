@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.peterzhang.my_first_android_app.SecondActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="61dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="448dp"
+        android:onClick="returnMainActivility"
+        android:text="@string/pass_response"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="448dp"
+        android:onClick="launchThirdActivility"
+        android:text="@string/pass_request"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/received_msg_from_main_activility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="335dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="94dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/received_msg_from_third_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="165dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/received_msg_from_main_activility" />
+
+    <TextView
+        android:id="@+id/label_received_msg_from_main_activility"
+        android:layout_width="320dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="59dp"
+        android:text="Received request message from Main activity is:"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/received_msg_from_main_activility"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/label_received_reply_message_from_the_third_activity"
+        android:layout_width="320dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="125dp"
+        android:text="Received reply message from the third activity is:"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/received_msg_from_third_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/received_msg_from_main_activility" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My_first_android_app</string>
+    <string name="send">Send</string>
+    <string name="pass_info">Pass Info</string>
+    <string name="reply">Reply</string>
+    <string name="second_activity">Second Activity</string>
+    <string name="third_activity">Third Activity</string>
+    <string name="enter_your_message_here">Enter your message here</string>
+    <string name="reply_a_message_here">Reply a message here</string>
+    <string name="Enter_your_message_here" />
+    <string name="please_enter_your_message_here">Please enter your message here</string>
+    <string name="pass_response">Pass Response</string>
+    <string name="pass_request">Pass Request</string>
+</resources>
