@@ -28,6 +28,7 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
+        // Test.
         Intent intent = getIntent();
         String message =intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
         message_from_main_activity = message;
