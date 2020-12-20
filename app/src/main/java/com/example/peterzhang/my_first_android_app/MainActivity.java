@@ -23,6 +23,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Set the application environment
+        Mint.setApplicationEnvironment(Mint.appEnvironmentStaging);
+
+        // TODO: Update with your API key
+        Mint.initAndStartSession(this.getApplication(), "YOUR_API_KEY");
+
         setContentView(R.layout.activity_main);
 
         TextView replyTextView = (TextView) findViewById(R.id.reply_msg_from_third_activity);
